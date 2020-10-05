@@ -1,0 +1,5 @@
+a, a:link, a:hover, a:visited
+{
+	color: ;
+	text-decoration: none;
+}
