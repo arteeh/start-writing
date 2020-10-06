@@ -24,8 +24,11 @@
 	
 	<footer class="footer mt-auto py-3">
 		<div class="container">
-			<span class="font-weight-bold text-dark">
-				Made by <a href="https://arteeh.com" class="text-dark">arteeh</a> with love and PHP
+			<span class="font-weight-bold text-dark mr-auto">
+				made by [<a href="https://arteeh.com" class="text-dark">arteeh</a>] with love and javascript.
+			</span>
+			<span class="font-weight-bold text-dark ml-auto">
+				[<a href="https://gitlab.com/arteeh/start-writing" class="text-dark">source code</a>]
 			</span>
 		</div>
 	</footer>
