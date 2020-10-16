@@ -1,21 +1,54 @@
+// Background colors in alphabetical order, following this list:
+// https://www.w3schools.com/colors/colors_names.asp
 var colorList = [
+	"AliceBlue",
+	"AntiqueWhite",
+	"Aqua",
 	"Aquamarine",
-	"BlueViolet",
-	"Brown",
+	"Azure",
+	"Beige",
+	"Bisque",
+	"BlanchedAlmond",
+	"BurlyWood",
 	"CadetBlue",
-	"Coral",
 	"CornflowerBlue",
 	"Cornsilk",
 	"Crimson",
-	"DarkCyan",
-	"DarkOliveGreen",
-	"FireBrick"
+	"Cyan",
+	"DarkTurquoise",
+	"DeepPink",
+	"DeepSkyBlue",
+	"DodgerBlue",
+	"FloralWhite",
+	"Fuchsia",
+	"Gold",
+	"GreenYellow",
+	"HoneyDew",
+	"HotPink",
+	"Ivory",
+	"Khaki",
+	"Lavender",
+	"LavenderBlush",
+	"LawnGreen",
+	"LemonChiffon",
+	"LightBlue",
+	"LightCoral",
+	"LightCyan",
+	"LightGoldenRodYellow",
+	"LightGreen",
+	"LightPink",
+	"LightSeaGreen",
+	"LightSkyBlue"	
 ];
 
+// Try to keep sentences around equal length using <br>&nbsp
 var challengeList = [
-	"Write about the most exciting thing that has happened to you in the last 30 minutes."
+	"Write about something that made you happy this week.<br>&nbsp",
+	"Write about the most exciting thing that has happened to you in the last 30 minutes.",
+	"Write about the stupidest thing you've done.<br>&nbsp"
 ];
 
+// Set the color at launch
 setColor();
 
 function setColor()
@@ -36,6 +69,7 @@ function setChallenge()
 	document.getElementById("challenge").innerHTML = challenge;
 }
 
+// Function to call when the button gets pressed
 function press()
 {
 	setColor();
