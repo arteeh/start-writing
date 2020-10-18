@@ -43,10 +43,12 @@ var colorList = [
 
 // Try to keep sentences around equal length using <br>&nbsp
 var challengeList = [
-	"Write about something that made you happy this week.<br>&nbsp",
+	"Write about something that made you happy this week.",
 	"Write about the most exciting thing that has happened to you in the last 30 minutes.",
-	"Write about the stupidest thing you've done.<br>&nbsp"
+	"Write about the stupidest thing you've done."
 ];
+
+var maxLength = 150;
 
 // Set the color at launch
 setColor();
@@ -64,6 +66,16 @@ function setChallenge()
 {
 	// Get a challenge from the challenge list
 	var challenge = challengeList[Math.floor(Math.random() * challengeList.length)];
+	
+	/*
+	var thisLength = challenge.length;
+	var toAdd = maxLength - thisLength;
+	while(toAdd > 0)
+	{
+		challenge = challenge.concat(" &nbsp");
+		toAdd--;
+	}
+	*/
 	
 	// Fill the challenge with a challenge from the challenge list
 	document.getElementById("challenge").innerHTML = challenge;
